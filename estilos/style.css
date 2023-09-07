@@ -1,0 +1,52 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #fff9ac;
+
+}
+
+#genero{
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+main {
+    background-color: rgb(195, 243, 247);
+    width: 560px;
+    
+    padding: 40px;
+    margin-top: 5%;
+    margin-left: 30%;
+   
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+}
+
+h1 {
+    font-size: 2em;
+    color: #000000;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #000000;
+}
+
+img.lado {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(26, 26, 255);
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela de Filmes</title>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Tabela de Filmes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Voltar</a></li>
+                <li><a href="#romance" onclick="exibirFilmes('Romance')">Romance</a></li>
+                <li><a href="#" onclick="exibirFilmes('Suspense')">Suspense</a></li>
+                <li><a href="#" onclick="exibirFilmes('Ação')">Ação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Filmes de Romance </h2>
+    <div id="desmarcarTodosButton"><button >Desmarcar Todos</button>        </div>
+    
+ 
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Filme</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lala Land</td>
+                <td><button onclick="marcarComoAssistido(this, 'Lala Land')">Marcar como Assistido</button></td>
+            </tr>
+            <tr>
+                <td>Como perder um homem em 10 dias</td>
+                <td><button onclick="marcarComoAssistido(this, 'Como perder um homem em 10 dias')">Marcar como Assistido</button></td>
+            </tr>
+            <td>Orgulho e Preconceito</td>
+            <td><button onclick="marcarComoAssistido(this, 'Orgulho e Preconceito')">Marcar como Assistido</button></td>
+        </tr>
+        <tr>
+            <td>Diário de uma Paixão</td>
+            <td><button onclick="marcarComoAssistido(this, 'Diário de uma Paixão')">Marcar como Assistido</button></td>
+        </tr>
+        <tr>
+          <td>A proposta</td>
+          <td><button onclick="marcarComoAssistido(this, 'A proposta')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>De repente 30</td>
+          <td><button onclick="marcarComoAssistido(this, 'De repente 30')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Titanic</td>
+          <td><button onclick="marcarComoAssistido(this, 'Titanic')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Como eu era antes de você</td>
+          <td><button onclick="marcarComoAssistido(this, 'Como eu era antes de você')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Sr. e Sra. Smith</td>
+          <td><button onclick="marcarComoAssistido(this, 'Sr. e Sra. Smith')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Romeu + Julieta</td>
+          <td><button onclick="marcarComoAssistido(this, 'Romeu + Julieta')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Esposa de mentirinha</td>
+          <td><button onclick="marcarComoAssistido(this, 'Esposa de mentirinha')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>O diário de uma princesa</td>
+          <td><button onclick="marcarComoAssistido(this, 'O diário de uma princesa')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Monte Carlo</td>
+          <td><button onclick="marcarComoAssistido(this, 'Monte Carlo')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Como se fosse a primeira vez</td>
+          <td><button onclick="marcarComoAssistido(this, 'Como se fosse a primeira vez')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>Através da minha Janela</td>
+          <td><button onclick="marcarComoAssistido(this, 'Através da minha Janela')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>As Patricinhas de Beverly Hills</td>
+          <td><button onclick="marcarComoAssistido(this, 'As Patricinhas de Beverly Hills')">Marcar como Assistido</button></td>
+      </tr>
+      <tr>
+          <td>A culpa é das estrelas</td>
+          <td><button onclick="marcarComoAssistido(this, 'A culpa é das estrelas')">Marcar como Assistido</button></td>
+      </tr>
+        </tbody>
+    </table>
+
+    <script src="cookie.js"></script>
+</body>
+</html>
+
