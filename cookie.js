@@ -35,14 +35,16 @@ function removerFilmeAssistido(filme) {
 }
 
 // Carregue filmes assistidos previamente ao carregar a página
-const filmesAssistidos = JSON.parse(localStorage.getItem('filmesAssistidos')) || [];
-filmesAssistidos.forEach(filme => {
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach(button => {
-        if (button.parentElement.previousElementSibling.textContent === filme) {
-            button.textContent = "Assistido";
-            button.disabled = true;
-        }
+document.addEventListener("DOMContentLoaded", function() {
+    const filmesAssistidos = JSON.parse(localStorage.getItem('filmesAssistidos')) || [];
+    filmesAssistidos.forEach(filme => {
+        const buttons = document.querySelectorAll("button");
+        buttons.forEach(button => {
+            if (button.textContent === "Marcar como Assistido" && button.parentElement.querySelector("h3").textContent === filme) {
+                button.textContent = "Assistido";
+                button.disabled = true;
+            }
+        });
     });
 });
 
@@ -61,5 +63,5 @@ function desmarcarTodos() {
 }
 
 // Adicione um evento de clique ao botão "Desmarcar Todos"
-const desmarcarTodosButton = document.getElementById("desmarcarTodosButton");
+const desmarcarTodosButton = document.querySelector(".movie button");
 desmarcarTodosButton.addEventListener("click", desmarcarTodos);
