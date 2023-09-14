@@ -1,4 +1,6 @@
- // Pega o botão
+//filtrar pela barra de pesquisa
+
+ // botão volta ao inicio
  let mybutton = document.getElementById("myBtn");
     
  // Quando o usuário descer 20px o botão aparece

@@ -28,7 +28,6 @@ header {
     text-align: center;
     padding: 10px 0;
     background-color: #9f00f4;
-           
 }
 
 header h1 {
@@ -56,7 +55,15 @@ h1{
     text-align: center;
 }
 
+/*barra de pesquisa*/
+#Pesquisar{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
 
+/*Botão desmarcar*/
 #desmarcarTodosButton{
     text-align: left;
     margin-left: 20.3%;
@@ -111,6 +118,7 @@ h1{
         
        
 .movie button {
+    border-radius: 5px;
     background-color: #9f00f4;
     border: none;
     color: white;
