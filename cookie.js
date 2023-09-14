@@ -1,3 +1,24 @@
+ // Pega o botão
+ let mybutton = document.getElementById("myBtn");
+    
+ // Quando o usuário descer 20px o botão aparece
+ window.onscroll = function() {scrollFunction()};
+ 
+ function scrollFunction() {
+   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+     mybutton.style.display = "block";
+   } else {
+     mybutton.style.display = "none";
+   }
+ }
+ 
+ // Quando o usuário clicar no botão, sobe a página
+ function topFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+ }
+
+
 // Função para marcar ou desmarcar como assistido e salvar nos cookies
 function marcarComoAssistido(button, filme) {
     if (button.textContent === "Marcar como Assistido") {
