@@ -91,6 +91,7 @@ h1{
 .movie img {
     display: block;
     margin: 0 auto;
+    border-radius: 3px;
     width: 100%; /* Tamanho fixo para todas as imagens */
     height: 250px; /* Altura fixa para todas as imagens */
     transition: transform 0.3s; /* Adiciona uma transição suave para a transformação */
