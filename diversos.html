@@ -12,12 +12,13 @@
         <h1>Recomendação de filmes</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="romance.html" onclick="exibirFilmes('Romance')">Romance</a></li>
-                <li><a href="suspense.html" onclick="exibirFilmes('Suspense')">Suspense</a></li>
-                <li><a href="acao.html" onclick="exibirFilmes('Ação')">Ação</a></li>
-                <li><a href="comedia.html" onclick="exibirFilmes('Comedia')">Comédia</a></li>
-                <li><a href="doramas.html" onclick="exibirFilmes('Doramas')">Dorama</a></li>
+                <li><a href="diversos.html">Diversos</a></li>
+                <li><a href="home.html">inicio</a></li>
+                <li><a href="romance.html" >Romance</a></li>
+                <li><a href="suspense.html" >Suspense</a></li>
+                <li><a href="acao.html" >Ação</a></li>
+                <li><a href="comedia.html" >Comédia</a></li>
+                <li><a href="doramas.html" >Dorama</a></li>
             </ul>
         </nav>
     </header>
@@ -29,8 +30,12 @@
         </form>
     </div>
    
-<h1>Romance</h1>
+
 <div class="movie">
+
+
+
+
     <div>
         <img src="https://www.thewriteteachers.com/wp-content/uploads/2017/02/La-La-Land.jpg?w=640" alt="Lala Land" >
         <h3>Lala Land</h3>
@@ -38,11 +43,17 @@
         <button onclick="marcarComoAssistido(this, 'Lala Land')">Marcar como Assistido</button> 
     </div>
    
+    <div>
+        <img src="https://i.pinimg.com/originals/f2/07/65/f20765e50b4642404b6f1cbec8d415c4.jpg" 
+        alt="Alerta vermelho">
+        <h3>Alerta vermelho</h3>
+        <button onclick="marcarComoAssistido(this, 'Alerta vermelho')">Marcar como Assistido</button>
+    </div>
 
     <div>
-        <img src="https://i.pinimg.com/originals/71/5c/76/715c76f46d96a63196bf448dac1c6b73.jpg" alt="Como perder um homem em 10 dias" >
-        <h3>Como perder um homem em 10 dias</h3>
-        <button onclick="marcarComoAssistido(this, 'Como perder um homem em 10 dias')">Marcar como Assistido</button>
+        <img src="https://i.pinimg.com/originals/ba/ea/ad/baeaad96ffbf6bde642af086fbb48086.jpg" alt="Blade Runner 1982">
+        <h3>Blade Runner 1982</h3>
+        <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
     </div>
 
 
@@ -51,41 +62,37 @@
         <h3>Orgulho e Preconceito</h3>
         <button onclick="marcarComoAssistido(this, 'Orgulho e Preconceito')">Marcar como Assistido</button>
     </div>
-
-
-    <div>
-        <img src="https://i.pinimg.com/originals/85/2f/d6/852fd68eb4bd46a8ef428cc8f01b0254.jpg" alt="Diário de uma Paixão">
-        <h3>Diário de uma Paixão</h3>
-        <button onclick="marcarComoAssistido(this, 'Diário de uma Paixão')">Marcar como Assistido</button>
-    </div>
 </div>
 
 
 <div class="movie">
+<!-- Capa da trilogia Eastrail 177
+-->
+<div class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
+    <img src="https://i.pinimg.com/originals/11/0e/6b/110e6be26b29ae21c5aed5bb9112ff44.jpg" alt="Fragmentado">
+    <h3>Trilogia Eastrail 177</h3>
+    <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
+</div>
 
-    <div>
-        <img src="https://i.pinimg.com/736x/ef/58/1c/ef581c07eeed6f2676efe67a8d28b307--proposals-the-ojays.jpg" alt="A proposta">
-        <h3>A proposta</h3>
-         <button onclick="marcarComoAssistido(this, 'A proposta')">Marcar como Assistido</button>
-    </div>
+<div>
+    <img src="https://i.pinimg.com/originals/2b/d0/02/2bd00265c813367464f79865a15ab9b3.jpg" 
+    alt="O Poço">
+    <h3>O Poço</h3>
+    <button onclick="marcarComoAssistido(this, 'O Poço')">Marcar como Assistido</button>
+</div>
+<div>
+    <img src="https://i.pinimg.com/originals/04/b5/e2/04b5e2504eb1d5694c49baef67ebf9ab.jpg" 
+    alt="Esposa de Mentirinha">
+    <h3>Esposa de Mentirinha</h3>
+    <button onclick="marcarComoAssistido(this, 'Esposa de Mentirinha')">Marcar como Assistido</button>
+</div>
 
-    <div>
-        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2019-04/23/15/asset/buzzfeed-prod-web-02/sub-buzz-11181-1556046877-1.jpg?crop=960:1165;0,0" alt="De repente 30">
-        <h3>De repente 30</h3>
-        <button onclick="marcarComoAssistido(this, 'De repente 30')">Marcar como Assistido</button>
-    </div>
-
-    <div>
-        <img src="https://i.pinimg.com/originals/44/55/d9/4455d96357fb041d1cf3c8a5264ed593.jpg" alt="Titanic">
-        <h3>Titanic</h3>
-        <button onclick="marcarComoAssistido(this, 'Titanic')">Marcar como Assistido</button>
-    </div>
-
-    <div>
-        <img src="https://i.pinimg.com/originals/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg" alt=" Como eu era antes de você">
-        <h3>Como eu era antes de você</h3>
-        <button onclick="marcarComoAssistido(this, 'Como eu era antes de você')">Marcar como Assistido</button>
-    </div>
+<div>
+    <img src="https://i.pinimg.com/originals/62/f7/f4/62f7f4c98c7ef3d351dc23993dad02ce.jpg" 
+    alt="Monte Carlo">
+    <h3>Monte Carlo</h3>
+    <button onclick="marcarComoAssistido(this, 'Monte Carlo')">Marcar como Assistido</button>
+</div>
 </div>
     
 <div class="movie">  
@@ -96,17 +103,16 @@
     </div>
 
     <div>
+        <img src="https://i.pinimg.com/originals/05/98/a8/0598a8b2b31ab2ff6950215431698350.jpg" alt="Seven - Os Sete Crimes Capitais">
+        <h3>Seven - Os Sete Crimes Capitais</h3>
+        <button onclick="marcarComoAssistido(this, 'Seven - Os Sete Crimes Capitais')">Marcar como Assistido</button>
+    </div>
+    <!--trilogia-->
+    <div>
         <img src="https://i.pinimg.com/originals/60/fe/9a/60fe9a57cffeb87207900fd43ae16e6d.jpg
         "alt="O diário de uma princesa">
         <h3>O diário de uma princesa</h3>
         <button onclick="marcarComoAssistido(this, 'O diário de uma princesa')">Marcar como Assistido</button>
-    </div>
-
-    <div>
-        <img src="https://i.pinimg.com/originals/62/f7/f4/62f7f4c98c7ef3d351dc23993dad02ce.jpg" 
-        alt="Monte Carlo">
-        <h3>Monte Carlo</h3>
-        <button onclick="marcarComoAssistido(this, 'Monte Carlo')">Marcar como Assistido</button>
     </div>
 
     <div>
@@ -125,26 +131,38 @@
         <h3>Para Todos Os Garotos Que Amei</h3>
         <button onclick="marcarComoAssistido(this, 'Para Todos Os Garotos Que Amei')">Marcar como Assistido</button>
     </div>
-     
+
     <div>
-        <img src="https://i.pinimg.com/originals/6d/d7/34/6dd734292c348451d0d824f341869f95.jpg" 
-        alt="10 Coisas Que Eu Odeio Em Você">
-        <h3>10 Coisas Que Eu Odeio Em Você</h3>
-        <button onclick="marcarComoAssistido(this, '10 Coisas Que Eu Odeio Em Você')">Marcar como Assistido</button>
-    </div>
-    
-    <div>
-        <img src="https://i.pinimg.com/originals/3a/9a/a4/3a9aa4a3d3f3610a1e6ac3c94a000068.jpg" 
-        alt="Amor e Outras Drogas">
-        <h3>Amor e Outras Drogas</h3>
-        <button onclick="marcarComoAssistido(this, 'Amor e Outras Drogas')">Marcar como Assistido</button>
+        <img src="https://i.pinimg.com/originals/07/26/ba/0726ba618e509ecb7b0f494d483441c6.jpg" alt="Garota Exemplar (Gone Girl)">
+        <h3>Garota Exemplar</h3>
+        <button onclick="marcarComoAssistido(this, 'Garota Exemplar')">Marcar como Assistido</button>
     </div>
               
+    <div>
+        <img src="https://i.pinimg.com/originals/8a/76/a9/8a76a90a57c613e37866542a0939eaf2.jpg" 
+        alt="A garota do século 20">
+        <h3>A garota do século 20</h3>
+        <button onclick="marcarComoAssistido(this, 'A garota do século 20')">Marcar como Assistido</button>
+    </div>
 
+    <div>
+        <img src="https://i.pinimg.com/originals/79/76/bb/7976bb3d6a99eafbdee3200b9232ed69.jpg" 
+        alt="Oldboy">
+        <h3>Oldboy</h3>
+        <button onclick="marcarComoAssistido(this, 'Oldboy')">Marcar como Assistido</button>
+    </div>
+    
     </div>
     
 <div class="movie">
 
+
+    <div>
+        <img src="https://i.pinimg.com/originals/58/72/34/587234bb34a7b5fa2bc416b076ee2500.jpg" 
+        alt="O Hospedeiro (The Host)">
+        <h3>O Hospedeiro</h3>
+        <button onclick="marcarComoAssistido(this, 'O Hospedeiro')">Marcar como Assistido</button>
+    </div>
      
     
     <div>
@@ -153,7 +171,15 @@
         <h3>(500) Dias Com Ela</h3>
         <button onclick="marcarComoAssistido(this, '(500) Dias Com Ela')">Marcar como Assistido</button>
     </div>
-              
+       
+           
+    <div>
+        <img src="https://i.pinimg.com/originals/e8/ee/8f/e8ee8f55f5a6b6a027408d97e08a938e.jpg" 
+        alt="Os Homens que Não Amavam as Mulheres">
+        <h3>Os Homens que Não Amavam as Mulheres</h3>
+        <button onclick="marcarComoAssistido(this, 'Os Homens que Não Amavam as Mulheres')">Marcar como Assistido</button>
+    </div>
+
     <div>
         <img src="https://i.pinimg.com/originals/84/cb/dc/84cbdc97c063548afc5de6845860c37b.jpg" 
         alt="Como Se Fosse a Primeira Vez">
@@ -164,11 +190,33 @@
     
 <div class="movie">
     <div>
-        <img src="" alt="Continência no amor">
+        <img src="https://i.pinimg.com/originals/bd/fc/54/bdfc54248fee03868db523092f85895b.jpg" 
+        alt="Continência no amor">
         <h3>Continência no amor</h3>
         <button onclick="marcarComoAssistido(this, 'Continência no amor')">Marcar como Assistido</button>
     </div>
      
+    <div>
+        <img src="https://i.pinimg.com/originals/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg" alt=" Como eu era antes de você">
+        <h3>Como eu era antes de você</h3>
+        <button onclick="marcarComoAssistido(this, 'Como eu era antes de você')">Marcar como Assistido</button>
+    </div>
+
+      
+    <div>
+        <img src="https://i.pinimg.com/originals/eb/a2/53/eba253697d0d950257f4749662ee93c8.jpg"
+         alt="O Agente Oculto">
+        <h3>O Agente Oculto</h3>
+        <button onclick="marcarComoAssistido(this, 'O Agente Oculto')">Marcar como Assistido</button>
+    </div>
+    
+    <div>
+        <img src="" 
+        alt="Os vizinhos">
+        <h3>Os vizinhos</h3>
+        <button onclick="marcarComoAssistido(this, 'Os vizinhos')">Marcar como Assistido</button>
+    </div>
+              
   
     
  
@@ -258,10 +306,12 @@
    
 
     <div>
-        <img src="https://i.pinimg.com/originals/05/98/a8/0598a8b2b31ab2ff6950215431698350.jpg" alt="Seven - Os Sete Crimes Capitais">
-        <h3>Seven - Os Sete Crimes Capitais</h3>
-        <button onclick="marcarComoAssistido(this, 'Seven - Os Sete Crimes Capitais')">Marcar como Assistido</button>
+        <img src="https://i.pinimg.com/originals/85/2f/d6/852fd68eb4bd46a8ef428cc8f01b0254.jpg" alt="Diário de uma Paixão">
+        <h3>Diário de uma Paixão</h3>
+        <button onclick="marcarComoAssistido(this, 'Diário de uma Paixão')">Marcar como Assistido</button>
     </div>
+
+   
      
     <div>
         <img src="https://i.pinimg.com/originals/a5/cf/7a/a5cf7a88477a10fc32f1faae3beda105.jpg" alt="Os suspeitos">
@@ -307,14 +357,7 @@
 
 
 <div class="movie">
-  <!-- Capa da trilogia Eastrail 177
-PRECISO ARRUMAR TRILOGIA
--->
-<div class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
-    <img src="https://i.pinimg.com/originals/11/0e/6b/110e6be26b29ae21c5aed5bb9112ff44.jpg" alt="Fragmentado">
-    <h3>Trilogia Eastrail 177</h3>
-    <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
-</div>
+  
 
 <div>
     <img src="https://i.pinimg.com/originals/b0/ae/a4/b0aea49646879a043ad9f6ec3002e99f.jpg" alt="A Origem (Inception)">
@@ -322,11 +365,7 @@ PRECISO ARRUMAR TRILOGIA
     <button onclick="marcarComoAssistido(this, 'A Origem (Inception)')">Marcar como Assistido</button>
 </div>
  
-<div>
-    <img src="https://i.pinimg.com/originals/ba/ea/ad/baeaad96ffbf6bde642af086fbb48086.jpg" alt="Blade Runner 1982">
-    <h3>Blade Runner 1982</h3>
-    <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
-</div>
+
           
 
 
@@ -362,12 +401,22 @@ PRECISO ARRUMAR TRILOGIA
 </div>
 
 <div class="movie">
-<div>
-    <img src="" alt="Garota Exemplar (Gone Girl)">
-    <h3>Garota Exemplar (Gone Girl)</h3>
-    <button onclick="marcarComoAssistido(this, 'Garota Exemplar (Gone Girl)')">Marcar como Assistido</button>
-</div>
+
  
+<div>
+    <img src="https://i.pinimg.com/originals/6d/d7/34/6dd734292c348451d0d824f341869f95.jpg" 
+    alt="10 Coisas Que Eu Odeio Em Você">
+    <h3>10 Coisas Que Eu Odeio Em Você</h3>
+    <button onclick="marcarComoAssistido(this, '10 Coisas Que Eu Odeio Em Você')">Marcar como Assistido</button>
+</div>
+
+<div>
+    <img src="https://i.pinimg.com/originals/3a/9a/a4/3a9aa4a3d3f3610a1e6ac3c94a000068.jpg" 
+    alt="Amor e Outras Drogas">
+    <h3>Amor e Outras Drogas</h3>
+    <button onclick="marcarComoAssistido(this, 'Amor e Outras Drogas')">Marcar como Assistido</button>
+</div>
+
 <div>
     <img src="" alt="O Silêncio dos Inocentes (The Silence of the Lambs)">
     <h3>O Silêncio dos Inocentes (The Silence of the Lambs)</h3>
@@ -388,18 +437,13 @@ PRECISO ARRUMAR TRILOGIA
 </div>
 
 <div class="movie">
-<div>
-    <img src="" alt="O Hospedeiro (The Host)">
-    <h3>O Hospedeiro (The Host)</h3>
-    <button onclick="marcarComoAssistido(this, 'O Hospedeiro (The Host)')">Marcar como Assistido</button>
-</div>
- 
-<div>
-    <img src="" alt="Oldboy">
-    <h3>Oldboy</h3>
-    <button onclick="marcarComoAssistido(this, 'Oldboy')">Marcar como Assistido</button>
-</div>
 
+    <div>
+        <img src="https://i.pinimg.com/originals/71/5c/76/715c76f46d96a63196bf448dac1c6b73.jpg" alt="Como perder um homem em 10 dias" >
+        <h3>Como perder um homem em 10 dias</h3>
+        <button onclick="marcarComoAssistido(this, 'Como perder um homem em 10 dias')">Marcar como Assistido</button>
+    </div>
+ 
 <div>
     <img src="" 
     alt="">
@@ -408,10 +452,23 @@ PRECISO ARRUMAR TRILOGIA
 </div>
 
 <div>
-    <img src="" alt="Coherence">
-    <h3>Coherence</h3>
-    <button onclick="marcarComoAssistido(this, 'Coherence')">Marcar como Assistido</button>
+    <img src="https://i.pinimg.com/736x/ef/58/1c/ef581c07eeed6f2676efe67a8d28b307--proposals-the-ojays.jpg" alt="A proposta">
+    <h3>A proposta</h3>
+     <button onclick="marcarComoAssistido(this, 'A proposta')">Marcar como Assistido</button>
 </div>
+
+<div>
+    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2019-04/23/15/asset/buzzfeed-prod-web-02/sub-buzz-11181-1556046877-1.jpg?crop=960:1165;0,0" alt="De repente 30">
+    <h3>De repente 30</h3>
+    <button onclick="marcarComoAssistido(this, 'De repente 30')">Marcar como Assistido</button>
+</div>
+
+<div>
+    <img src="https://i.pinimg.com/originals/44/55/d9/4455d96357fb041d1cf3c8a5264ed593.jpg" alt="Titanic">
+    <h3>Titanic</h3>
+    <button onclick="marcarComoAssistido(this, 'Titanic')">Marcar como Assistido</button>
+</div>
+
 </div>
 
 
@@ -429,17 +486,7 @@ PRECISO ARRUMAR TRILOGIA
     <button onclick="marcarComoAssistido(this, 'Fratura')">Marcar como Assistido</button>
 </div>
 
-<div>
-    <img src="" alt="O Poço">
-    <h3>O Poço</h3>
-    <button onclick="marcarComoAssistido(this, 'O Poço')">Marcar como Assistido</button>
-</div>
-          
-<div>
-    <img src="" alt="Os Homens que Não Amavam as Mulheres">
-    <h3>Os Homens que Não Amavam as Mulheres</h3>
-    <button onclick="marcarComoAssistido(this, 'Os Homens que Não Amavam as Mulheres')">Marcar como Assistido</button>
-</div>
+   
 </div>
 
 
@@ -484,21 +531,9 @@ PRECISO ARRUMAR TRILOGIA
         <h3>Agente Stone</h3>
         <button onclick="marcarComoAssistido(this, 'Agente Stone')">Marcar como Assistido</button>
     </div>
-     
-    <div>
-        <img src="https://i.pinimg.com/originals/eb/a2/53/eba253697d0d950257f4749662ee93c8.jpg"
-         alt="O Agente Oculto">
-        <h3>O Agente Oculto</h3>
-        <button onclick="marcarComoAssistido(this, 'O Agente Oculto')">Marcar como Assistido</button>
-    </div>
+   
     
     
-    <div>
-        <img src="https://i.pinimg.com/originals/f2/07/65/f20765e50b4642404b6f1cbec8d415c4.jpg" 
-        alt="Alerta vermelho">
-        <h3>Alerta vermelho</h3>
-        <button onclick="marcarComoAssistido(this, 'Alerta vermelho')">Marcar como Assistido</button>
-    </div>
               
     <div>
         <img src="https://i.pinimg.com/originals/93/23/ed/9323edc3cec5494526c65495a8ce871e.jpg" 
@@ -547,34 +582,10 @@ PRECISO ARRUMAR TRILOGIA
         <button onclick="marcarComoAssistido(this, 'Hora do Rush')">Marcar como Assistido</button>
     </div>
      
-    <div>
-        <img src="" alt="Esposa de Mentirinha">
-        <h3>Esposa de Mentirinha</h3>
-        <button onclick="marcarComoAssistido(this, 'Esposa de Mentirinha')">Marcar como Assistido</button>
-    </div>
-    
-    <div>
-        <img src="" 
-        alt="Os vizinhos">
-        <h3>Os vizinhos</h3>
-        <button onclick="marcarComoAssistido(this, 'Os vizinhos')">Marcar como Assistido</button>
-    </div>
-              
-    <div>
-        <img src="" 
-        alt="Alerta ">
-        <h3></h3>
-        <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-    </div>
+
+
     </div>
     <div class="movie">
-    <div>
-        <img src="https://i.pinimg.com/originals/f2/07/65/f20765e50b4642404b6f1cbec8d415c4.jpg" 
-        alt="Alerta vermelho">
-        <h3>Alerta vermelho</h3>
-        <button onclick="marcarComoAssistido(this, 'Alerta vermelho')">Marcar como Assistido</button>
-    </div>
-              
     <div>
         <img src="https://i.pinimg.com/originals/93/23/ed/9323edc3cec5494526c65495a8ce871e.jpg" 
         alt="Mistério em Paris">
@@ -606,11 +617,8 @@ PRECISO ARRUMAR TRILOGIA
         <button onclick="marcarComoAssistido(this, 'Parasite')">Marcar como Assistido</button>
     </div>
      
-    <div>
-        <img src="" alt="A garota do século 20">
-        <h3>A garota do século 20</h3>
-        <button onclick="marcarComoAssistido(this, 'A garota do século 20')">Marcar como Assistido</button>
-    </div>
+    
+         
     
     <div>
         <img src="" 
