@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h1>Filmes de Suspense</h1>
         <nav>
             <ul>
@@ -29,35 +29,7 @@
         </form>
 
     </div>
-    
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" alt="11 homens e 1 segredo">
-            <h3>11 homens e 1 segredo</h3>
-            <button onclick="marcarComoAssistido(this, '11 homens e 1 segredo')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="https://i.pinimg.com/originals/ba/ea/ad/baeaad96ffbf6bde642af086fbb48086.jpg" alt="Blade Runner 1982">
-            <h3>Blade Runner 1982</h3>
-            <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-    
+
     <div class="movie">
 
         <div>
@@ -66,7 +38,7 @@
             <button onclick="marcarComoAssistido(this, 'Os Outros (The Others)')">Marcar como Assistido</button>
         </div>
        
-
+    
         <div>
             <img src="https://i.pinimg.com/originals/05/98/a8/0598a8b2b31ab2ff6950215431698350.jpg" alt="Seven - Os Sete Crimes Capitais">
             <h3>Seven - Os Sete Crimes Capitais</h3>
@@ -86,6 +58,7 @@
         </div>
     </div>
     
+    
 <div class="movie">
     <div>
         <img src="https://i.pinimg.com/originals/8f/c9/b4/8fc9b42f05a3c8f8b809711f7ca01417.jpg" alt="The Usual Suspects">
@@ -100,19 +73,75 @@
     </div>
     
     <div>
+        <img src="https://i.pinimg.com/originals/cd/d1/82/cdd182a23c74743eb8a31cd897a5ccd9.jpg" 
+        alt="Clube da Luta">
+        <h3>Clube da Luta</h3>
+        <button onclick="marcarComoAssistido(this, 'Clube da Luta')">Marcar como Assistido</button>
+    </div>
+        
+    <div>
+        <img src="https://i.pinimg.com/originals/32/7e/81/327e8160d8faf369a8c2e1748e5bef7c.jpg" alt="11 homens e 1 segredo">
+        <h3>11 homens e 1 segredo</h3>
+        <button onclick="marcarComoAssistido(this, '11 homens e 1 segredo')">Marcar como Assistido</button>
+    </div>
+              
+</div>
+
+
+<div class="movie">
+      <!-- Capa da trilogia Eastrail 177
+    PRECISO ARRUMAR TRILOGIA
+    -->
+    <div class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
+        <img src="https://i.pinimg.com/originals/11/0e/6b/110e6be26b29ae21c5aed5bb9112ff44.jpg" alt="Fragmentado">
+        <h3>Trilogia Eastrail 177</h3>
+        <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
+    </div>
+
+    <div>
         <img src="https://i.pinimg.com/originals/b0/ae/a4/b0aea49646879a043ad9f6ec3002e99f.jpg" alt="A Origem (Inception)">
         <h3>A Origem (Inception)</h3>
         <button onclick="marcarComoAssistido(this, 'A Origem (Inception)')">Marcar como Assistido</button>
     </div>
+     
+    <div>
+        <img src="https://i.pinimg.com/originals/ba/ea/ad/baeaad96ffbf6bde642af086fbb48086.jpg" alt="Blade Runner 1982">
+        <h3>Blade Runner 1982</h3>
+        <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
+    </div>
               
+  
+
     <div>
         <img src="" 
         alt="">
         <h3></h3>
         <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
     </div>
-              
 </div>
+
+
+    <!-- Espaço reservado para os filmes da trilogia Eastrail 177 -->
+    <div class="trilogy-movies" id="eastrail177-movies">
+    
+        <div>
+            <img src="https://i.pinimg.com/originals/04/ce/09/04ce09f9cd0cd3580b532226b3d59074.jpg" alt="Fragmentado">
+            <h3>Fragmentado</h3>
+            <button onclick="marcarComoAssistido(this, 'Fragmentado')">Marcar como Assistido</button>
+        </div>
+        
+        <div>
+            <img src="https://i.pinimg.com/originals/3e/a0/f2/3ea0f27c69a3aafce501431ea3607af0.jpg" alt="Fragmentado">
+            <h3>Corpo Fechado</h3>
+            <button onclick="marcarComoAssistido(this, 'Corpo Fechado')">Marcar como Assistido</button>
+        </div>
+        <div>
+            <img src="https://i.pinimg.com/originals/35/26/09/352609acdf14ddc111dca940dd8d02a2.jpg" alt="Fragmentado">
+            <h3>Vidro</h3>
+            <button onclick="marcarComoAssistido(this, 'Vidro')">Marcar como Assistido</button>
+        </div>
+    
+    </div>
 
 <div class="movie">
     <div>
@@ -154,9 +183,10 @@
     </div>
     
     <div>
-        <img src="" alt="Clube da Luta">
-        <h3>Clube da Luta</h3>
-        <button onclick="marcarComoAssistido(this, 'Clube da Luta')">Marcar como Assistido</button>
+        <img src="" 
+        alt="">
+        <h3></h3>
+        <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
     </div>
 
     <div>
@@ -169,9 +199,10 @@
 
 <div class="movie">
     <div>
-        <img src="" alt="Fragmentado">
-        <h3>Fragmentado</h3>
-        <button onclick="marcarComoAssistido(this, 'Fragmentado')">Marcar como Assistido</button>
+        <img src="" 
+        alt="">
+        <h3></h3>
+        <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
     </div>
      
     <div>
@@ -213,318 +244,20 @@
             <h3>O Colecionador de Ossos</h3>
             <button onclick="marcarComoAssistido(this, 'O Colecionador de Ossos')">Marcar como Assistido</button>
         </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
         
         <div>
             <img src="" 
             alt="">
             <h3></h3>
             <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-  
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-  
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-  
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-        
-    <div class="movie">
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-         
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-        
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-                  
-        <div>
-            <img src="" 
-            alt="">
-            <h3></h3>
-            <button onclick="marcarComoAssistido(this, '')">Marcar como Assistido</button>
-        </div>
-    </div>
-         
-   <!-- Botão Subir Pagina -->
-   <button onclick="topFunction()" id="myBtn" title="Ir para o topo">Início</button>
+        </div>    
    
+    </div>
+    
+   <!-- Botão Subir Pagina  -->
+   <button id="myBtn"><a id="header" href="#header">Início</a></button>
+
+
       <script src="cookie.js"></script>
 </body>
 </html>

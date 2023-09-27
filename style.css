@@ -1,10 +1,68 @@
+
+/* Estilo para os espaços reservados dos filmes da trilogia */
+.trilogy-movies {
+    display: none; /* Inicialmente, os filmes estão ocultos */
+    flex-wrap: wrap;
+    margin-top: -25.05%;
+    margin-left: 32%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    padding-bottom: 2.9%;
+    background-color:#9f00f4 ;
+    position: absolute;
+    border-radius: 5px;
+}
+
+
+.trilogy-movies div {
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/*Filmes img*/
+.trilogy-movies img {
+    width: 50%;
+    height: 70%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+   
+}
+/*capa da trilogia quando clicada*/
+.movie-trilogia img {
+display: block;
+margin: 20px;
+ margin-top: -25px;
+ border-radius: 3px;
+width: 80%; 
+height: 250px;          
+}
+
+.trilogy-movies h3 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Estilo para os botões de marcação como assistido */
+.trilogy-movies button {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    color: #9f00f4;
+    padding: 6px 9px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
 body{
     background-color: #fff9ac; 
 }
 
 /* Botão Subir Topo */
 #myBtn {
-    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -13,14 +71,13 @@ body{
     border: none;
     outline: none;
     background-color: #9f00f4;
-    color: bisque;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
   }
   
 #myBtn:hover {
-    background-color: #000000;
+    background-color: #9f00f48b;
   }
 
 header {
@@ -94,7 +151,7 @@ h1{
     border-radius: 3px;
     width: 100%; /* Tamanho fixo para todas as imagens */
     height: 250px; /* Altura fixa para todas as imagens */
-    transition: transform 0.3s; /* Adiciona uma transição suave para a transformação */
+    transition: transform 0.3s; /*transição*/
 }
 
 /* trasição de zoom */

@@ -1,24 +1,23 @@
-//filtrar pela barra de pesquisa
 
- // botão volta ao inicio
- let mybutton = document.getElementById("myBtn");
-    
- // Quando o usuário descer 20px o botão aparece
- window.onscroll = function() {scrollFunction()};
- 
- function scrollFunction() {
-   if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-     mybutton.style.display = "block";
-   } else {
-     mybutton.style.display = "none";
-   }
- }
- 
- // Quando o usuário clicar no botão, sobe a página
- function topFunction() {
-   document.body.scrollTop = 0;
-   document.documentElement.scrollTop = 0;
- }
+
+// Variável para rastrear o estado de exibição dos filmes da trilogia
+let filmesTrilogiaVisiveis = false;
+
+// Função para alternar a exibição dos filmes da trilogia
+function alternarFilmesTrilogia() {
+    // Se os filmes da trilogia estiverem visíveis, oculte-os; caso contrário, mostre-os
+    const trilogia = document.getElementById('eastrail177-movies');
+    if (filmesTrilogiaVisiveis) {
+        trilogia.style.display = 'none';
+    } else {
+        trilogia.style.display = 'flex';
+    }
+    filmesTrilogiaVisiveis = !filmesTrilogiaVisiveis; // Inverta o estado
+}
+
+// Evento de clique na capa da trilogia
+const capaTrilogia = document.querySelector('.trilogy-cover');
+capaTrilogia.addEventListener('click', alternarFilmesTrilogia);
 
 
 // Função para marcar ou desmarcar como assistido e salvar nos cookies
