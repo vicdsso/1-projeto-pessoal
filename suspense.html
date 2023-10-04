@@ -12,13 +12,13 @@
         <h1>Filmes de Suspense</h1>
         <nav>
             <ul>
-                <li><a href="diversos.html">Diversos</a></li>
                 <li><a href="index.html">Início</a></li>
+                <li><a href="diversos.html" onclick="exibirFilmes('Diversos')">Diversos</a></li>
                 <li><a href="romance.html" onclick="exibirFilmes('Romance')">Romance</a></li>
                 <li><a href="suspense.html" onclick="exibirFilmes('Suspense')">Suspense</a></li>
-                <li><a href="acao.html" onclick="exibirFilmes('Ação')">Ação</a></li>
+               <!-- <li><a href="acao.html" onclick="exibirFilmes('Ação')">Ação</a></li>
                 <li><a href="comedia.html" onclick="exibirFilmes('Comedia')">Comédia</a></li>
-                <li><a href="doramas.html" onclick="exibirFilmes('Doramas')">Dorama</a></li>
+                <li><a href="doramas.html" onclick="exibirFilmes('Doramas')">Dorama</a></li>-->
             </ul>
         </nav>
     </header>
@@ -90,14 +90,14 @@
 
 
 <div class="movie">
-      <!-- Capa da trilogia Eastrail 177
-    PRECISO ARRUMAR TRILOGIA
-    -->
+      <!-- Capa da trilogia Eastrail 17-->
+    <div class="fundo">
     <div class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
         <img src="https://i.pinimg.com/originals/11/0e/6b/110e6be26b29ae21c5aed5bb9112ff44.jpg" alt="Fragmentado">
         <h3>Trilogia Eastrail 177</h3>
         <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
     </div>
+</div>
 
     <div>
         <img src="https://i.pinimg.com/originals/b0/ae/a4/b0aea49646879a043ad9f6ec3002e99f.jpg" alt="A Origem (Inception)">
@@ -140,7 +140,6 @@
             <h3>Vidro</h3>
             <button onclick="marcarComoAssistido(this, 'Vidro')">Marcar como Assistido</button>
         </div>
-    
     </div>
 
 <div class="movie">

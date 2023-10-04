@@ -12,13 +12,13 @@
         <h1>Recomendação de filmes</h1>
         <nav>
             <ul>
-                <li><a href="diversos.html">Diversos</a></li>
-                <li><a href="home.html">inicio</a></li>
-                <li><a href="romance.html" >Romance</a></li>
-                <li><a href="suspense.html" >Suspense</a></li>
-                <li><a href="acao.html" >Ação</a></li>
-                <li><a href="comedia.html" >Comédia</a></li>
-                <li><a href="doramas.html" >Dorama</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diversos.html" onclick="exibirFilmes('Diversos')">Diversos</a></li>
+                <li><a href="romance.html" onclick="exibirFilmes('Romance')">Romance</a></li>
+                <li><a href="suspense.html" onclick="exibirFilmes('Suspense')">Suspense</a></li>
+               <!-- <li><a href="acao.html" onclick="exibirFilmes('Ação')">Ação</a></li>
+                <li><a href="comedia.html" onclick="exibirFilmes('Comedia')">Comédia</a></li>
+                <li><a href="doramas.html" onclick="exibirFilmes('Doramas')">Dorama</a></li>-->
             </ul>
         </nav>
     </header>
@@ -74,6 +74,7 @@
     <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
 </div>
 
+
 <div>
     <img src="https://i.pinimg.com/originals/2b/d0/02/2bd00265c813367464f79865a15ab9b3.jpg" 
     alt="O Poço">
@@ -94,6 +95,29 @@
     <button onclick="marcarComoAssistido(this, 'Monte Carlo')">Marcar como Assistido</button>
 </div>
 </div>
+
+<!-- Espaço reservado para os filmes da trilogia Eastrail 177 -->
+<div class="trilogy-movies" id="eastrail177-movies">
+
+    <div>
+        <img src="https://i.pinimg.com/originals/04/ce/09/04ce09f9cd0cd3580b532226b3d59074.jpg" alt="Fragmentado">
+        <h3>Fragmentado</h3>
+        <button onclick="marcarComoAssistido(this, 'Fragmentado')">Marcar como Assistido</button>
+    </div>
+    
+    <div>
+        <img src="https://i.pinimg.com/originals/3e/a0/f2/3ea0f27c69a3aafce501431ea3607af0.jpg" alt="Fragmentado">
+        <h3>Corpo Fechado</h3>
+        <button onclick="marcarComoAssistido(this, 'Corpo Fechado')">Marcar como Assistido</button>
+    </div>
+    <div>
+        <img src="https://i.pinimg.com/originals/35/26/09/352609acdf14ddc111dca940dd8d02a2.jpg" alt="Fragmentado">
+        <h3>Vidro</h3>
+        <button onclick="marcarComoAssistido(this, 'Vidro')">Marcar como Assistido</button>
+    </div>
+
+</div>
+
     
 <div class="movie">  
     <div>
@@ -378,27 +402,6 @@
 </div>
 
 
-<!-- Espaço reservado para os filmes da trilogia Eastrail 177 -->
-<div class="trilogy-movies" id="eastrail177-movies">
-
-    <div>
-        <img src="https://i.pinimg.com/originals/04/ce/09/04ce09f9cd0cd3580b532226b3d59074.jpg" alt="Fragmentado">
-        <h3>Fragmentado</h3>
-        <button onclick="marcarComoAssistido(this, 'Fragmentado')">Marcar como Assistido</button>
-    </div>
-    
-    <div>
-        <img src="https://i.pinimg.com/originals/3e/a0/f2/3ea0f27c69a3aafce501431ea3607af0.jpg" alt="Fragmentado">
-        <h3>Corpo Fechado</h3>
-        <button onclick="marcarComoAssistido(this, 'Corpo Fechado')">Marcar como Assistido</button>
-    </div>
-    <div>
-        <img src="https://i.pinimg.com/originals/35/26/09/352609acdf14ddc111dca940dd8d02a2.jpg" alt="Fragmentado">
-        <h3>Vidro</h3>
-        <button onclick="marcarComoAssistido(this, 'Vidro')">Marcar como Assistido</button>
-    </div>
-
-</div>
 
 <div class="movie">
 
