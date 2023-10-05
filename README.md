@@ -1,34 +1,18 @@
-# Repositório
- Primeiro Repositório
- ***
+**Preciso fazer**
 
-**Linguagem Markdown**
+- [ ] Excluir as páginas "inicio", "index", "acao", "comedia" e "dorama", deixando a página "diversos" como principal. Antes disso, verificar se ela contém todos os filmes das - outras páginas.
+- [ ] Criar imagens para o carrossel.
+- [ ] Implementar um carrossel na nova página inicial.
+- [ ] Tornar o site responsivo.
+- [ ] Criar um menu hamburguer para dispositivos móveis.
+- [ ] Desenvolver a página "Assistidos".
+- [ ] Desenvolver a página "Favoritos".
+- [ ] Implementar filtragem na página inicial.
 
-Sempre colocar os simbolos no começo e no final 
+__Descrição__
+O site contará com uma página inicial que terá uma barra de navegação e logo em seguida um carrossel que também redirecionará para outras páginas. Na parte inferior, estarão listados todos os filmes da minha lista. Nesta página, haverá filtros na barra lateral esquerda, contendo gêneros como romance, suspense, comédia, ação, terror, entre outros, além de filtros por ano de lançamento do filme. As outras páginas serão dedicadas exclusivamente aos filmes de romance e suspenses. Haverá também uma página para filmes já assistidos e outra para filmes favoritos, totalizando 4 páginas.
 
-2 **  **deixa o texto negrito**
-ou
-2 __ __tambem fica negrito__
-
-2 ~~ ~~deixa o tetxo riscado~~
-
-3 - uma linha ___ ou 3 * ***
-2 _ e 1 * __*deixa negrito e italico*__
-___
-Lista numerada:
-1. Começa colocando 1 e o ponto. 
-5. Depois o resto da lista pode ser qualquer sequencia
-6. Para fazer um sub item tem que dar 3 espaços 
-   1. coloca o 1 e o ponto.
-  
-
-Lista Demarcada
-*1.Teste
-   *1.teste
-  
-
-
-
-
-
- 
+__Objetivos__
+.
+.
+.
