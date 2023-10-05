@@ -16,12 +16,34 @@
                 <li><a href="diversos.html" onclick="exibirFilmes('Diversos')">Diversos</a></li>
                 <li><a href="romance.html" onclick="exibirFilmes('Romance')">Romance</a></li>
                 <li><a href="suspense.html" onclick="exibirFilmes('Suspense')">Suspense</a></li>
-               <!-- <li><a href="acao.html" onclick="exibirFilmes('Ação')">Ação</a></li>
-                <li><a href="comedia.html" onclick="exibirFilmes('Comedia')">Comédia</a></li>
-                <li><a href="doramas.html" onclick="exibirFilmes('Doramas')">Dorama</a></li>-->
             </ul>
         </nav>
     </header>
+    <div id="filtro">
+
+        <label>
+            <a href="diversos.html"> Mostrar Todos</a>
+        </label>
+  
+        <label>
+            <input type="checkbox" name="genero" value="romance"> Romance
+        </label>
+        <label>
+            <input type="checkbox" name="genero" value="acao"> Ação
+        </label>
+
+        <label>
+            <input type="checkbox" name="genero" value="ficcao"> Ficção
+        </label>
+
+        <label>
+            <input type="checkbox" name="genero" value="comedia"> Comedia
+        </label>
+
+        <label>
+            <input type="checkbox" name="genero" value="suspense"> Suspense
+        </label>
+
     <div class="movie"><button  onclick="desmarcarTodos()">Desmarcar Todos</button>
     
         <form>
@@ -29,70 +51,85 @@
             <button type="button" onclick="searchMovies()">Pesquisar</button>
         </form>
     </div>
+</div>
+    <!--FILTRAGEM TESTE-->
    
 
+
+<!--FILTRAGEM TESTE-->
 <div class="movie">
-
-
-
-
-    <div>
+    <div class="movie romance">
+        <div>
         <img src="https://www.thewriteteachers.com/wp-content/uploads/2017/02/La-La-Land.jpg?w=640" alt="Lala Land" >
         <h3>Lala Land</h3>
-
         <button onclick="marcarComoAssistido(this, 'Lala Land')">Marcar como Assistido</button> 
     </div>
-   
+    </div>
+
+<div class="movie acao">
     <div>
         <img src="https://i.pinimg.com/originals/f2/07/65/f20765e50b4642404b6f1cbec8d415c4.jpg" 
         alt="Alerta vermelho">
         <h3>Alerta vermelho</h3>
         <button onclick="marcarComoAssistido(this, 'Alerta vermelho')">Marcar como Assistido</button>
     </div>
+    </div>
 
+<div class="movie ficcao">
     <div>
         <img src="https://i.pinimg.com/originals/ba/ea/ad/baeaad96ffbf6bde642af086fbb48086.jpg" alt="Blade Runner 1982">
         <h3>Blade Runner 1982</h3>
         <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
     </div>
+    </div>
 
-
+<div class="movie romance">
     <div>
         <img src="https://i.pinimg.com/originals/22/57/f6/2257f60e84967cfa6fa9427fdc0cef46.jpg" alt="Orgulho e Preconceito" >
         <h3>Orgulho e Preconceito</h3>
         <button onclick="marcarComoAssistido(this, 'Orgulho e Preconceito')">Marcar como Assistido</button>
     </div>
+    </div>
+
 </div>
 
 
 <div class="movie">
 <!-- Capa da trilogia Eastrail 177
 -->
-<div class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
+<div class="movie suspense" class="trilogy-cover" onmouseover="mostrarFilmes('eastrail177')" onmouseout="ocultarFilmes('eastrail177')">
+    <div>
     <img src="https://i.pinimg.com/originals/11/0e/6b/110e6be26b29ae21c5aed5bb9112ff44.jpg" alt="Fragmentado">
     <h3>Trilogia Eastrail 177</h3>
     <button onclick="marcarComoAssistido(this, 'Blade Runner 1982')">Marcar como Assistido</button>
 </div>
+</div>
 
-
+<div class="movie suspense">
 <div>
     <img src="https://i.pinimg.com/originals/2b/d0/02/2bd00265c813367464f79865a15ab9b3.jpg" 
     alt="O Poço">
     <h3>O Poço</h3>
     <button onclick="marcarComoAssistido(this, 'O Poço')">Marcar como Assistido</button>
 </div>
+</div>
+
+<div class="movie comedia">
 <div>
     <img src="https://i.pinimg.com/originals/04/b5/e2/04b5e2504eb1d5694c49baef67ebf9ab.jpg" 
     alt="Esposa de Mentirinha">
     <h3>Esposa de Mentirinha</h3>
     <button onclick="marcarComoAssistido(this, 'Esposa de Mentirinha')">Marcar como Assistido</button>
 </div>
+</div>
 
+<div class="movie romance">
 <div>
     <img src="https://i.pinimg.com/originals/62/f7/f4/62f7f4c98c7ef3d351dc23993dad02ce.jpg" 
     alt="Monte Carlo">
     <h3>Monte Carlo</h3>
     <button onclick="marcarComoAssistido(this, 'Monte Carlo')">Marcar como Assistido</button>
+</div>
 </div>
 </div>
 
@@ -318,7 +355,7 @@
     </div>
 </div>
     
-<h1>Suspense</h1>
+
 <!--SUSPENSE-->
 <div class="movie">
 
