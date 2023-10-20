@@ -26,90 +26,72 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Variável para rastrear o estado de exibição dos filmes da trilogia
-let filmesTrilogiaVisiveis = false;
-
-// Função para alternar a exibição dos filmes da trilogia
-function alternarFilmesTrilogia() {
-    // Se os filmes da trilogia estiverem visíveis, oculte-os; caso contrário, mostre-os
-    const trilogia = document.getElementById('eastrail177-movies');
-    if (filmesTrilogiaVisiveis) {
-        trilogia.style.display = 'none';
-    } else {
-        trilogia.style.display = 'flex';
-    }
-    filmesTrilogiaVisiveis = !filmesTrilogiaVisiveis; // Inverta o estado
-}
-
-// Evento de clique na capa da trilogia
-const capaTrilogia = document.querySelector('.trilogy-cover');
-capaTrilogia.addEventListener('click', alternarFilmesTrilogia);
-
-
-// Função para marcar ou desmarcar como assistido e salvar nos cookies
-function marcarComoAssistido(button, filme) {
-    if (button.textContent === "Marcar como Assistido") {
+    // Função para marcar um filme como assistido
+    function marcarComoAssistido(button, filme) {
         button.textContent = "Assistido";
         button.disabled = true;
 
-        // Armazene o filme assistido no localStorage
-        adicionarFilmeAssistido(filme);
-    } else if (button.textContent === "Assistido") {
-        button.textContent = "Marcar como Assistido";
-        button.disabled = false;
-
-        // Remova o filme da lista de filmes assistidos no localStorage
-        removerFilmeAssistido(filme);
-    }
-}
-
-// Função para adicionar um filme à lista de filmes assistidos no localStorage
-function adicionarFilmeAssistido(filme) {
-    const filmesAssistidos = JSON.parse(localStorage.getItem('filmesAssistidos')) || [];
-    if (!filmesAssistidos.includes(filme)) {
+        // Armazena o filme assistido em um cookie
+        const filmesAssistidos = getCookie("filmesAssistidos") || [];
         filmesAssistidos.push(filme);
-        localStorage.setItem('filmesAssistidos', JSON.stringify(filmesAssistidos));
+        setCookie("filmesAssistidos", JSON.stringify(filmesAssistidos), 365); // O número 365 define a validade do cookie em dias
     }
-}
 
-// Função para remover um filme da lista de filmes assistidos no localStorage
-function removerFilmeAssistido(filme) {
-    const filmesAssistidos = JSON.parse(localStorage.getItem('filmesAssistidos')) || [];
-    const index = filmesAssistidos.indexOf(filme);
-    if (index !== -1) {
-        filmesAssistidos.splice(index, 1);
-        localStorage.setItem('filmesAssistidos', JSON.stringify(filmesAssistidos));
-    }
-}
-
-// Carregue filmes assistidos previamente ao carregar a página
-document.addEventListener("DOMContentLoaded", function() {
-    const filmesAssistidos = JSON.parse(localStorage.getItem('filmesAssistidos')) || [];
-    filmesAssistidos.forEach(filme => {
-        const buttons = document.querySelectorAll("button");
+    // Função para desmarcar todos os filmes
+    function desmarcarTodos() {
+        const buttons = document.querySelectorAll("button[onclick^='marcarComoAssistido']");
         buttons.forEach(button => {
-            if (button.textContent === "Marcar como Assistido" && button.parentElement.querySelector("h3").textContent === filme) {
-                button.textContent = "Assistido";
-                button.disabled = true;
-            }
-        });
-    });
-});
-
-// Função para desmarcar todos os filmes e limpar o localStorage
-function desmarcarTodos() {
-    const buttons = document.querySelectorAll("button");
-    buttons.forEach(button => {
-        if (button.textContent === "Assistido") {
             button.textContent = "Marcar como Assistido";
             button.disabled = false;
+        });
+
+        // Remove o cookie que armazena os filmes assistidos
+        deleteCookie("filmesAssistidos");
+    }
+
+    // Função para inicializar os filmes assistidos quando a página é carregada
+    function inicializarFilmesAssistidos() {
+        const filmesAssistidos = getCookie("filmesAssistidos");
+        if (filmesAssistidos) {
+            const filmesAssistidosArray = JSON.parse(filmesAssistidos);
+            filmesAssistidosArray.forEach(filme => {
+                const button = document.querySelector(`button[onclick="marcarComoAssistido(this, '${filme}')"]`);
+                if (button) {
+                    button.textContent = "Assistido";
+                    button.disabled = true;
+                }
+            });
         }
-    });
+    }
 
-    // Limpe o localStorage
-    localStorage.removeItem('filmesAssistidos');
-}
+    // Função para definir um cookie
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + "; " + expires + "; path=/";
+    }
 
-// Adicione um evento de clique ao botão "Desmarcar Todos"
-const desmarcarTodosButton = document.querySelector(".movie button");
-desmarcarTodosButton.addEventListener("click", desmarcarTodos);
+    // Função para obter o valor de um cookie
+    function getCookie(name) {
+        const cookieName = name + "=";
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            let cookie = cookies[i];
+            while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) == 0) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        return null;
+    }
+
+    // Função para excluir um cookie
+    function deleteCookie(name) {
+        setCookie(name, "", -1);
+    }
+
+    // Chama a função de inicialização quando a página é carregada
+    window.addEventListener("load", inicializarFilmesAssistidos);
