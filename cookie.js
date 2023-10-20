@@ -44,3 +44,45 @@ function alternarFilmesTrilogia() {
 // Evento de clique na capa da trilogia
 const capaTrilogia = document.querySelector('.trilogy-cover');
 capaTrilogia.addEventListener('click', alternarFilmesTrilogia);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    // Função para marcar um filme como assistido
+    function marcarComoAssistido(button, filme) {
+        button.textContent = "Assistido";
+        button.disabled = true;
+        
+        // Armazena o filme assistido no armazenamento local
+        const filmesAssistidos = JSON.parse(localStorage.getItem("filmesAssistidos")) || [];
+        filmesAssistidos.push(filme);
+        localStorage.setItem("filmesAssistidos", JSON.stringify(filmesAssistidos));
+    }
+
+    // Função para desmarcar todos os filmes
+    function desmarcarTodos() {
+        const buttons = document.querySelectorAll("button[onclick^='marcarComoAssistido']");
+        buttons.forEach(button => {
+            button.textContent = "Marcar como Assistido";
+            button.disabled = false;
+        });
+
+        // Limpa a lista de filmes assistidos no armazenamento local
+        localStorage.removeItem("filmesAssistidos");
+    }
+
+    // Função para inicializar os filmes assistidos quando a página é carregada
+    function inicializarFilmesAssistidos() {
+        const filmesAssistidos = JSON.parse(localStorage.getItem("filmesAssistidos")) || [];
+        filmesAssistidos.forEach(filme => {
+            const button = document.querySelector(`button[onclick="marcarComoAssistido(this, '${filme}')"]`);
+            if (button) {
+                button.textContent = "Assistido";
+                button.disabled = true;
+            }
+        });
+    }
+
+    // Chama a função de inicialização quando a página é carregada
+    window.addEventListener("load", inicializarFilmesAssistidos);
+
