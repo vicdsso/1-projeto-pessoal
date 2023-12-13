@@ -95,3 +95,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Chama a função de inicialização quando a página é carregada
     window.addEventListener("load", inicializarFilmesAssistidos);
+
