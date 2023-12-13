@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+
+    body {
+        background-color: #fbeaa0;
+    }
+    
+    .banner-categorias {
+        background-color: #adf6f2;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20%;
+    }
+
+    .btn-categoria{
+        margin-top: -100px;
+        margin-bottom: 100px;
+        margin-left: 30px;
+    }
+
+    .dropdown-genero {
+        margin-top: 30px;
+    }
+
+    .estrutura {
+        width: 20%;
+        position: relative;
+        border-radius: 5px;
+        }
+            
+
+    .btn-marcar {
+      
+       margin-top:-40%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      
+    }
+
+    .estrutura:hover .btn-marcar {
+        opacity: 1;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+</style>
+
+<section class="banner-categorias container">
+        <button type="button" class="btn-categoria btn btn-outline-danger">Livros</button>
+        <button type="button" class="btn-categoria btn btn-outline-warning">Filmes</button>
+        <button type="button" class="btn-categoria btn btn-outline-dark">Series</button>
+</section>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn dropdown-toggle  btn-outline-dark dropdown-genero" data-bs-toggle="dropdown" aria-expanded="false">
+        Gêneros
+    </button>
+    <ul style="background-color: #fbeaa0;" class="dropdown-menu ">
+        <li><a class="dropdown-item" href="#">Suspense</a></li>
+        <li><a class="dropdown-item" href="#">Romance</a></li>
+        <li><a class="dropdown-item" href="#">Distopia</a></li>
+        <li><a class="dropdown-item" href="#">Ação</a></li>
+    </ul>
+</div>
+
+<div>
+    <br>
+    <div class="container">
+        <div class="estrutura ">
+            <img src="https://occ-0-4726-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSAFXforRVWtmdLfMr7EhBjehhf14r_ZbrwD47CzqxCNSdUCiSC7-ZEsfl8GP7turavwsXBT6k0j559-Tx5UlmmAXVJeJGZRMI.webp?r=926" alt="Namorados pra sempre" class="img-fluid">
+            <center> <button type="button" class="btn btn-primary btn-sm btn-marcar">Marcar como Assistido</button></center>
+        </div>
+
+        <div class="estrutura">
+            <img src="https://occ-0-4726-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZizP79J1O2RE5HUnfk_7J2SCAeHa5UvkvRUc5wcyASPYZQ_FxjeXV_skf0UL3tBxyOkVeVHVyQvILNqEsEkYTRMAJbjR29MsgLaKK1ZJ6bpD4PDZZilP8TYejUnzYhQ-uPP.jpg?r=6de" alt="Por lugares incríveis" class="img-fluid">
+            <center> <button type="button" class="btn btn-primary btn-sm btn-marcar">Marcar como Assistido</button></center>
+        </div>
+
+        <div class="estrutura">
+            <img src="https://occ-0-4726-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSkjexEaMCUF3ajKf9SU1XlUTXU9-TdmMiwjBa88A21KrcAfXv0ZnTSGqRcOGhBy7mVxZz5JbQ-j5zrMvegbLDu1lhhPKEQfcZcjBnUHk2pRy0j7wZ4gVI-zOkLqF6TQrsvk.jpg?r=4a4" alt="Depois do universo" class="img-fluid">
+            <center> <button type="button" class="btn btn-primary btn-sm btn-marcar">Marcar como Assistido</button></center>
+        </div>
+
+        <div class="estrutura">
+            <img src="https://occ-0-4726-185.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdRkT9CTI6_9HvVcG22-yttlwtGIAqL2PCNUTw3NY4trF-x3SZFp5jlhjLMKWVWNqtTks4a30j9Cqk_qxxcDOiR9juNEXBwjXlI.webp?r=95a" alt="Amor e outras drogas" class="img-fluid">
+            <center> <button type="button" class="btn btn-primary btn-sm btn-marcar">Marcar como Assistido</button></center>
+        </div>
+    </div>
+</div>
