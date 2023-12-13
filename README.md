@@ -1,18 +1,19 @@
-**Preciso fazer**
+# Organizador de Filmes, Séries e Livros
 
-- [ ] Excluir as páginas "inicio", "index", "acao", "comedia" e "dorama", deixando a página "diversos" como principal. Antes disso, verificar se ela contém todos os filmes das - outras páginas.
-- [ ] Criar imagens para o carrossel.
-- [ ] Implementar um carrossel na nova página inicial.
-- [ ] Tornar o site responsivo.
-- [ ] Criar um menu hamburguer para dispositivos móveis.
-- [ ] Desenvolver a página "Assistidos".
-- [ ] Desenvolver a página "Favoritos".
-- [ ] Implementar filtragem na página inicial.
+Bem-vindo ao meu projeto pessoal de organização de filmes, séries e livros! O objetivo é fornecer aos usuários uma maneira fácil e intuitiva de organizar e gerenciar seus entretenimento.
 
-__Descrição__
-O site contará com uma página inicial que terá uma barra de navegação e logo em seguida um carrossel que também redirecionará para outras páginas. Na parte inferior, estarão listados todos os filmes da minha lista. Nesta página, haverá filtros na barra lateral esquerda, contendo gêneros como romance, suspense, comédia, ação, terror, entre outros, além de filtros por ano de lançamento do filme. As outras páginas serão dedicadas exclusivamente aos filmes de romance e suspenses. Haverá também uma página para filmes já assistidos e outra para filmes favoritos, totalizando 4 páginas.
+## Funcionalidades 
 
-__Objetivos__
-.
-.
-.
+### Livros, Filmes e Séries
+
+Na página de cada categoria, os usuários podem adicionar novos itens fornecendo informações como título e uma foto representativa. Os itens podem ser marcados como "já lido/visto" e movidos para páginas específicas, proporcionando uma experiência personalizada.Além disso, os usuários podem avaliar os livros usando um sistema de 5 estrelas.
+
+
+### Páginas Personalizadas
+
+Os usuários têm a opção de criar páginas personalizadas para cada livro. Nesses espaços, eles podem fazer anotações específicas sobre o livro, proporcionando uma experiência personalizada.
+
+## Tecnologias Utilizadas
+
+- Visual Studio 2022
+
